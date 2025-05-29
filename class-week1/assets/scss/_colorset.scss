@@ -1,0 +1,47 @@
+@use "sass:map";
+@use "sass:meta";
+
+$light-theme: (
+  background-base: rgba(233, 235, 238, 1),
+  font-color: rgba(0, 0, 0, 1),
+  nextflix-color: rgba(220, 15, 32, 1)
+);
+$dark-theme: (
+  background-base: rgba(10, 10, 10, 1),
+  font-color: rgba(255, 255, 255, 1),
+  nextflix-color: rgba(220, 15, 32, 1)
+);
+
+:root {
+
+  @each $k,
+  $v in $light-theme {
+    #{"--" + $k}: #{$v};
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+
+    @each $k,
+    $v in $dark-theme {
+      #{"--" + $k}: #{$v};
+    }
+  }
+}
+
+[data-theme='light'] {
+
+  @each $k,
+  $v in $light-theme {
+    #{"--" + $k}: #{$v};
+  }
+}
+
+[data-theme='dark'] {
+
+  @each $k,
+  $v in $dark-theme {
+    #{"--" + $k}: #{$v};
+  }
+}

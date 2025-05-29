@@ -1,0 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@mixin responsive-font($min, $max) {
+  font-size: clamp(#{$min}px, calc(#{$min}px + (#{$max} - #{$min}) * ((100vw - 320px) / (1280 - 320))), #{$max}px);
+}
+
+html {
+  color:green;
+}
+
+h1 {
+  @include responsive-font(20, 42);
+}
+h2 {
+  @include responsive-font(14, 18);
+}
+
+div,
+p {
+  @include responsive-font(12, 18);
+}
+
