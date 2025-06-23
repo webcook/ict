@@ -98,3 +98,7 @@ document.getElementById('searchbtn').addEventListener('click', async () => {
     ui.showSpinner(false);
   }
 });
+
+document.getElementById('searchuser').addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') document.getElementById('searchbtn').click();
+});
