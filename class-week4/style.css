@@ -1,0 +1,84 @@
+* {
+  font-family: "Pretendard", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, 'Noto Sans KR', sans-serif;
+}
+
+#export-btn {
+  background: #096131;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#export-btn:hover {
+  background: #03893a;
+}
+
+.cell-row {
+  display: flex;
+}
+
+.cell {
+  width: 100px;
+  height: 36px;
+  border: 1px solid #ccc;
+  outline: none;
+  box-sizing: border-box;
+  padding: 4px 6px;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #fff;
+  transition: background-color 0.1s ease-in-out, border 0.1s;
+}
+
+.cell:focus {
+  background-color: #f0f8ff;
+  border: 2px solid #4a90e2;
+}
+
+.cell.header {
+  background: #eaeaea;
+  font-weight: 600;
+  text-align: center;
+  cursor: default;
+}
+
+.cell.header.active {
+  background: #cce5ff;
+  color: #003366;
+}
+
+/* hover 시 약간 강조 */
+.cell:not(.header):hover {
+  background-color: #f7faff;
+}
+
+/* 상태 영역 스타일도 정리 */
+#cell-status {
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 8px;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+#undo-btn, #redo-btn {
+  background: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin-left: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#undo-btn:hover,
+#redo-btn:hover {
+  background: #357ab8;
+}
