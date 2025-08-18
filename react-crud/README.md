@@ -22,7 +22,7 @@ Store에서 이용하지 않고 JSON 파일DB를 이용해서 리프레쉬 또�
 ## 주요 기능
 
 - 리액트서버 3000번 포트 pm2 기통
-- json-server 3030번 포트를 pm2 기동
+- json-server localhost:3030번 포트를 pm2 기동
 
 ---
 
@@ -44,10 +44,11 @@ $ npm run server # json-server 기동
 ```bash
 $ pm2 start npm --name "budget" -- start
 $ pm2 start npm --name "budgetAPI" -- server
+$ pm2 start npm --name budgetAPI -- run server
 ```
 
 ## 브라우저 확인
 ```
 http://localhost:3000/
-http://3.35.9.69:3000/
+http://3.34.1.171:3000/
 ```
