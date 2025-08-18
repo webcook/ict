@@ -1,9 +1,3 @@
-
-npm install
-
-
-npm install json-server --save-dev
-
 # React - CRUD 예산 메모장
 
 db.json파일을 이용해서 REST API 개념을 이해하는 과제
