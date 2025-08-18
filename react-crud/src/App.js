@@ -11,10 +11,7 @@ const App = () => {
   const [alert, setAlert] = useState({show: false});
   const [edit, setEdit] = useState(false);
   const [id, setId] = useState('');
-  const isLocalhost = typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
-  const API_BASE_URL =
-    process.env.REACT_APP_API_BASE_URL ||
-    (isLocalhost ? 'http://localhost:3030/expenses' : 'http://3.35.9.69:3030/expenses');
+  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || '/api/expenses';
 
 
   const [expenses, setExpenses] = useState([])
