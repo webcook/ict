@@ -1,0 +1,51 @@
+.item {
+    background-color: var(--mainWhite);
+    line-height: 1.5rem;
+    padding: 14px 18px;
+    margin-bottom: 1rem;
+    border: 1px solid #eef1f8;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    box-shadow: 0 6px 16px rgba(17, 24, 39, 0.06);
+}
+
+.item:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 22px rgba(17, 24, 39, 0.08);
+}
+
+.info {
+    flex: 0 0 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.expense {
+    margin-right: 2rem;
+}
+
+.amount {
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 1px 3px;
+    color: var(--primaryColor);
+}
+
+.clear-btn,
+.edit-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.clear-btn {
+    color: #d16b76;
+}
+
+.edit-btn {
+    color: #6f95ff;
+}
