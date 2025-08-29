@@ -50,7 +50,11 @@
   ```
 - pm2 띄우기
   ```bash
-  pm2 start "yarn run run:both" --name react-shop-both
+  # 서버
+  pm2 start "cd server && yarn start" --name react-shop-server
+
+  # 클라이언트 (EC2 외부 접속 가능하게 HOST=0.0.0.0)
+  pm2 start "cd client && HOST=0.0.0.0 yarn start" --name react-shop-client
   ```
 
 - 동작확인
