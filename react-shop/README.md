@@ -57,7 +57,7 @@
   - 웹 브라우저에서 [http://localhost:3000](http://localhost:3000)
   - 서버는 [http://localhost:3090](http://localhost:3090)
 
-## SnapShots
+## Bash Screenshots
 - npm install Result
 
   <img src="snap/rs-install.png" width="400"/>
@@ -87,6 +87,13 @@ RS/
     │   └── model/
     └── thumbnails/
 ```
+
+## ScreenShots
+  <img src="snap/screen-shot-01.png" width="1024"/>
+
+  <img src="snap/screen-shot-02.png" width="1024"/>
+
+
 ---
 
 - [Express.js 공식 문서](https://expressjs.com/) - 서버 프레임워크에 대해 더 자세히 알아보기
