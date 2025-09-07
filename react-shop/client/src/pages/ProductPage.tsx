@@ -206,6 +206,8 @@ const ProductPage = () => {
                 fontWeight: 600,
                 padding: "12px 24px",
                 fontSize: "1rem",
+                borderBottom: 1,
+                borderBottomColor: "#ff0000",
                 "&:hover": {
                   borderColor: "#E64A19",
                   backgroundColor: "rgba(255, 138, 101, 0.1)",

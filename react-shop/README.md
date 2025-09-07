@@ -48,14 +48,41 @@
   ```bash
   yarn run:both
   ```
+
+
+### AWS Trouble Shooting
+- Corepack 활성화 후 Yarn 3 사용
+  ```bash
+  corepack enable
+  ```
+  ```bash
+  corepack prepare yarn@3.2.1 --activate
+  ```
+  ```bash
+  yarn -v
+  # 3.2.1
+  cd server
+  YARN_NETWORK_CONCURRENCY=1 yarn install
+
+  cd client
+  YARN_NETWORK_CONCURRENCY=1 yarn install
+  ```
+
 - pm2 띄우기
   ```bash
-  # 서버
-  pm2 start "cd server && yarn start" --name react-shop-server
 
-  # 클라이언트 (EC2 외부 접속 가능하게 HOST=0.0.0.0)
-  pm2 start "cd client && HOST=0.0.0.0 yarn start" --name react-shop-client
+  # server
+  pm2 start "cd /home/ec2-user/website/ict/react-shop/server && yarn start" --name react-shop-server
+
+  # client
+  pm2 start "cd /home/ec2-user/website/ict/react-shop/client && HOST=0.0.0.0 yarn start" --name react-shop-client
+
   ```
+
+
+
+
+
 
 - 동작확인
   - 웹 브라우저에서 [http://localhost:3000](http://localhost:3000)
