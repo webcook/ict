@@ -5,7 +5,7 @@ import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig({
   server: {
-    host: "::",
+    host: "0.0.0.0",  // "::" 대신 "0.0.0.0"으로 변경
     port: 3000,
   },
   plugins: [react()],
